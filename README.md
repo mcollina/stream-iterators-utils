@@ -1,5 +1,7 @@
 # Stream Iterators Utils
 
+[![Build Status](https://travis-ci.com/mcollina/stream-iterators-utils.svg?branch=master)](https://travis-ci.com/mcollina/stream-iterators-utils)
+
 This is a toolbelt of functions to facilitate the usage of async
 iterators with Streams in Node.js. Requires Node 10+.
 
