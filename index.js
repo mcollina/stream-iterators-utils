@@ -13,8 +13,12 @@ function toReadable (iterator, opts) {
     readable.destroy(err)
   }
 
+  let curNext
   async function next () {
-    const { value, done } = await iterator.next()
+    if (curNext) return curNext
+    const { value, done } = await (curNext = iterator.next())
+    curNext = null
+
     if (done) {
       readable.push(null)
       return
