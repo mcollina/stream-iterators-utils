@@ -1,6 +1,6 @@
 {
   "name": "stream-iterators-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An utility belt for working with streams using async iterators",
   "main": "index.js",
   "scripts": {
